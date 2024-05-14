@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+
+:root {
+    /* Couleurs primaires */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /* Couleurs neutres */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* Famille de police Young Serif */
+    --font-family-young-serif: 'Young Serif', serif;
+
+    /* Famille de police Outfit */
+    --font-family-outfit: 'Outfit', sans-serif;
+
+    --weight-regular: 400;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-color: var(--eggshell);
+    font-family: var(--font-family-outfit);
+
+}
+
+.recipe {
+    background-color: var(--white);
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: var(--wenge-brown);
+    font-size: 0.7rem;
+
+}
+
+.omlette-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe h1 {
+    font-family: var(--font-family-young-serif);
+    font-weight: 300;
+    color: var(--dark-charcoal);
+    margin-bottom: 15px;
+}
+
+.receipe-intro {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--wenge-brown);
+    line-height: 1rem;
+    margin-bottom: 25px;
+
+}
+
+.recipe-Preparation-time {
+    padding: 5px 20px;
+    background-color: var(--rose-white);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.recipe-Preparation-time .title {
+    color: var(--dark-raspberry);
+    font-weight: var(--weight-bold);
+
+}
+
+
+ul {
+    list-style: 10px;
+}
+
+li {
+
+    padding: 5px 15px;
+
+}
+
+li::marker {
+    font-size: 10px;
+    font-weight: bolder;
+    color: var(--nutmeg);
+}
+
+hr {
+    color: var(--light-grey);
+}
+
+h2 {
+    color: var(--nutmeg);
+    font-family: var(--font-family-young-serif);
+    font-weight: 500;
+}
+
+p {
+    font-size: 0.925rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+tr:last-child td,
+tr:last-child th {
+    border-bottom: none;
+}
+
+
+td {
+    width: 40%;
+    border-bottom: 1px solid var(--light-grey);
+
+}
+
+td p {
+    padding-left: 20px;
+}
+
+td span {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+
+
+/* Styles pour mobile (375px) */
+@media only screen and (max-width: 375px) {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .recipe {
+        background-color: var(--white);
+        max-width: 100vw;
+        color: var(--wenge-brown);
+        font-size: 0.7rem;
+    }
+
+}
+
+/* Styles pour desktop (1440px) */
+@media only screen and (min-width: 376px) and (max-width: 1440px) {}
